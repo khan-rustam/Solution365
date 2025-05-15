@@ -46,7 +46,13 @@ export default function AboutUsSection() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="relative py-20 bg-gradient-to-br from-[#e0f7fa] via-white to-[#fce4ec] overflow-hidden">
+      {/* Decorative SVG shape at the top */}
+      <div className="absolute top-0 left-0 w-full -z-10">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-24">
+          <path fill="#28ade1" fillOpacity="0.08" d="M0,32L48,53.3C96,75,192,117,288,117.3C384,117,480,75,576,74.7C672,75,768,117,864,133.3C960,149,1056,139,1152,117.3C1248,96,1344,64,1392,48L1440,32V0H1392C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0H0V32Z" />
+        </svg>
+      </div>
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
@@ -56,8 +62,18 @@ export default function AboutUsSection() {
           className="max-w-4xl mx-auto"
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">About Us</h2>
-            <div className="h-1 w-20 bg-gradient-to-r from-[#28ade1] to-[#f62c28] mx-auto mb-8"></div>
+            <motion.h2 
+              initial={{ opacity: 0, y: 30 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 0.7 }}
+              className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-[#28ade1] to-[#f62c28] bg-clip-text text-transparent drop-shadow-lg"
+            >
+              About Us
+            </motion.h2>
+            <div className="h-1 w-24 bg-gradient-to-r from-[#28ade1] to-[#f62c28] mx-auto mb-8 rounded-full animate-pulse"></div>
+            <blockquote className="mx-auto max-w-2xl italic text-xl md:text-2xl text-[#28ade1] bg-white/70 rounded-xl shadow-lg px-6 py-4 border-l-4 border-[#f62c28] mb-8">
+              "Empowering brands with creativity, technology, and heart."
+            </blockquote>
           </motion.div>
 
           <motion.div variants={itemVariants} className="mb-12">

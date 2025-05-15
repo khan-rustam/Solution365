@@ -69,9 +69,12 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link href="/contact">
+              <Link
+                href="https://hughtechnolabs.supersite2.myorderbox.com/"
+                target="_blank"
+              >
                 <Button className="bg-[#f62c28] hover:bg-[#f62c28]/90 text-white px-8 py-6 text-lg rounded-md w-full sm:w-auto">
-                  Let&apos;s Build Your Brand
+                  Find your domain
                 </Button>
               </Link>
               <Link href="/services">
