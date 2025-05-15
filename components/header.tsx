@@ -66,10 +66,11 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-
-        <Button className="hidden md:inline-flex bg-[#28ade1] hover:bg-[#28ade1]/90">
-          Let&apos;s Build Your Brand
-        </Button>
+        <Link href="/contact">
+          <Button className="hidden md:inline-flex bg-[#28ade1] hover:bg-[#28ade1]/90">
+            Let&apos;s Build Your Brand
+          </Button>
+        </Link>
 
         {/* Mobile Menu Button */}
         <button
@@ -99,9 +100,11 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-[#28ade1] hover:bg-[#28ade1]/90 w-full">
-              <Link href="/contact">Let&apos;s Build Your Brand</Link>
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-[#28ade1] hover:bg-[#28ade1]/90 w-full">
+                Let&apos;s Build Your Brand
+              </Button>
+            </Link>
           </div>
         </div>
       )}

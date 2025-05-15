@@ -1,8 +1,8 @@
-import Link from "next/link"
-import { Instagram, Facebook, Linkedin } from "lucide-react"
+import Link from "next/link";
+import { Instagram, Facebook, Linkedin } from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 text-white w-full">
@@ -14,7 +14,9 @@ export default function Footer() {
                 Solutions369
               </span>
             </Link>
-            <p className="text-gray-400 mb-4">Innovative Minds. Impactful Results.</p>
+            <p className="text-gray-400 mb-4">
+              Innovative Minds. Impactful Results.
+            </p>
             <div className="flex gap-4">
               <a
                 href="https://www.instagram.com/solutions369_?igsh=ampxcnQ2N3Y2b3A4"
@@ -47,22 +49,34 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/about"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/services"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -73,27 +87,42 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/services"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Digital Marketing
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/services"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   IT & Tech Consultancy
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/services"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Branding & Advertising
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/services"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Creative Services
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/services"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Game Development
                 </Link>
               </li>
@@ -103,9 +132,18 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <address className="not-italic text-gray-400 space-y-2">
-              <p>S7, Amit Tower, Sector 5, Pratap Nagar, Sanganer, Jaipur, Rajasthan – 302029</p>
+              <p>
+                S7, Amit Tower, Sector 5, Pratap Nagar, Sanganer, Jaipur,
+                Rajasthan – 302029
+              </p>
               <p>Phone: +91 83021-222333</p>
-              <p>Email: mail.solution369@gmail.com</p>
+              <p>
+                Email:{" "}
+                <a href="mailto:amit@solutions369.in">amit@solutions369.in</a>
+                <br />
+                Email:{" "}
+                <a href="mailto:info@solutions369.in">info@solutions369.in</a>
+              </p>
             </address>
           </div>
         </div>
@@ -115,5 +153,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

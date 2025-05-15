@@ -52,7 +52,13 @@ export default function ContactSection() {
     {
       icon: <Phone className="h-8 w-8" />,
       title: "Call Us",
-      content: <p className="text-gray-600">+91 83021-222333</p>,
+      content: (
+        <p className="text-gray-600">
+          <a href="https://wa.me/918302122333" target="_blank">
+            +91 83021-222333
+          </a>
+        </p>
+      ),
     },
     {
       icon: <Mail className="h-8 w-8" />,
@@ -65,6 +71,14 @@ export default function ContactSection() {
             rel="noopener noreferrer"
           >
             info@solutions369.in
+          </a>{" "}
+          <br />
+          <a
+            href="mailto:amit@solutions369.in"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            amit@solutions369.in{" "}
           </a>
         </p>
       ),

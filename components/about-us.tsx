@@ -67,8 +67,17 @@ export default function AboutUs() {
     <section className="relative py-20 bg-gradient-to-br from-[#e0f7fa] via-white to-[#fce4ec] overflow-hidden">
       {/* Decorative SVG shape at the top */}
       <div className="absolute top-0 left-0 w-full -z-10">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-24">
-          <path fill="#28ade1" fillOpacity="0.08" d="M0,32L48,53.3C96,75,192,117,288,117.3C384,117,480,75,576,74.7C672,75,768,117,864,133.3C960,149,1056,139,1152,117.3C1248,96,1344,64,1392,48L1440,32V0H1392C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0H0V32Z" />
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-24"
+        >
+          <path
+            fill="#28ade1"
+            fillOpacity="0.08"
+            d="M0,32L48,53.3C96,75,192,117,288,117.3C384,117,480,75,576,74.7C672,75,768,117,864,133.3C960,149,1056,139,1152,117.3C1248,96,1344,64,1392,48L1440,32V0H1392C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0H0V32Z"
+          />
         </svg>
       </div>
       <div className="container mx-auto px-4">
@@ -239,6 +248,13 @@ export default function AboutUs() {
             </div>
           </motion.div>
         </motion.div>
+        <div className="mt-12 text-center">
+          <h4 className="text-xl font-semibold mb-2">Contact Us</h4>
+          <p className="text-gray-700">
+            <a href="mailto:amit@solutions369.in" className="hover:underline">amit@solutions369.in</a><br/>
+            <a href="mailto:info@solutions369.in" className="hover:underline">info@solutions369.in</a>
+          </p>
+        </div>
       </div>
     </section>
   );

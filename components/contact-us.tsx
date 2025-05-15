@@ -219,9 +219,8 @@ export default function ContactUs() {
                     <div>
                       <h4 className="font-medium text-gray-800">Email</h4>
                       <p className="text-gray-600">
-                        <a href="mailto:info@solutions369.in">
-                          info@solutions369.in
-                        </a>
+                        <a href="mailto:amit@solutions369.in">amit@solutions369.in</a><br/>
+                        <a href="mailto:info@solutions369.in">info@solutions369.in</a>
                       </p>
                     </div>
                   </div>
