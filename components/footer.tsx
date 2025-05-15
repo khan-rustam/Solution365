@@ -5,8 +5,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-gray-900 text-white w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="inline-block mb-4">
@@ -17,7 +17,7 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">Innovative Minds. Impactful Results.</p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/solutions369_?igsh=ampxcnQ2N3Y2b3A4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#f62c28] transition-colors"
@@ -25,7 +25,7 @@ export default function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61572878921069"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#28ade1] transition-colors"
@@ -33,7 +33,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/solutions369dotin/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#28ade1] transition-colors"

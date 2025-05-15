@@ -36,13 +36,13 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300",
+        "fixed top-0 w-full z-50 transition-all duration-300 h-20",
         isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4",
       )}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 flex justify-between items-center ">
         <Link href="/" className="flex items-center">
-          <img src="/Solutions369.png" alt="Solutions369 Logo" className="h-10 w-auto" />
+          <img src="/Solutions369.png" alt="Solutions369 Logo" className="h-20 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}

@@ -93,8 +93,8 @@ export default function WhyChooseUs() {
               className="order-1 lg:order-2 relative h-[400px] rounded-xl overflow-hidden shadow-xl"
             >
               <Image
-                src="/placeholder.svg?height=800&width=600"
-                alt="Solutions369 Team Working"
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                alt="Team working together"
                 fill
                 className="object-cover"
               />
@@ -106,9 +106,12 @@ export default function WhyChooseUs() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                className="relative bg-white p-8 pt-16 rounded-2xl shadow-lg border-2 border-transparent hover:border-gradient-to-r hover:from-[#28ade1] hover:to-[#f62c28] transition-all duration-300 group overflow-hidden text-center hover:shadow-2xl"
               >
-                <div className="mb-6">{reason.icon}</div>
+                <div className="absolute top-1 left-1/2 -translate-x-1/2 z-10 flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-[#28ade1] to-[#f62c28] shadow-lg border-4 border-white group-hover:scale-110 transition-transform"> 
+                  <span className="text-white text-3xl">{reason.icon}</span>
+                </div>
+                <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,#28ade1_0%,transparent_70%),radial-gradient(circle_at_80%_80%,#f62c28_0%,transparent_70%)] pointer-events-none"></div>
                 <h4 className="text-xl font-bold mb-4 text-gray-800">{reason.title}</h4>
                 <p className="text-gray-600">{reason.description}</p>
               </motion.div>
